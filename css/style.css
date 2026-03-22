@@ -1,0 +1,229 @@
+body{
+    background-color: blanchedalmond;
+    margin: 0;
+    /* margin-top:50px ; */
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    margin-left: 10%;
+    margin-top: 1em;
+}
+/*CSS de la galeria*/
+.galery_container{
+    
+    /* border: 2px solid black; */
+    display: flex;
+    width: 80%;
+    /* height: 100%; */
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galery_item{
+    width: 23%;
+    margin: 0.3em;
+    min-width: 50px; /*crear un limit per a que les imatges no continuin disminuint i es quedin totes en una sola columna eventualment*/
+    
+}
+.galery_item img{
+    border: 3px solid #ddd;
+    border-radius: 0.5em;
+    width: 100%;
+}
+.galery_item:nth-child(4n+1){
+    filter: brightness(70%);
+}
+.galery_item:nth-child(4n){
+    filter: brightness(70%);
+}
+.galery_item img:hover{
+    border: 3px solid #01e9ed;
+    filter: brightness(60%); /*decreases brighness making the image darker when hovering*/
+}
+
+/*CSS sobre nosaltres*/
+.sobre_nosaltres{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    margin: auto;
+    width: 80%;
+}
+.gridItem{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 0.6em;
+    /* border: 1px solid; */
+    text-align: justify;
+    margin: 1em;
+    
+    
+}
+.sn1{
+    grid-column: 1/4;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 5%;
+    
+}
+.sn3{
+    grid-column: 2/4;
+    border: 1px solid;
+}
+.sn4{
+    grid-column: 1/3;
+    border: 1px solid;
+}
+
+.image img{
+        /* display: block; */
+        width: 100%;
+        height: 100%;
+        /* height: auto; */
+        border-radius: 8%;
+}
+/*CSS de la carta*/
+.carta{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 25% auto auto;
+    margin: auto;
+    width: 80%;
+}
+.menu{
+    grid-column: 1/4;
+    text-align: center;
+    border: 1px solid;
+    padding: 3%;
+    border-radius: 0.6em;
+}
+.side_menu{
+    
+    grid-row: span 2;
+    border: 1px solid;
+    border-radius: 0.6em;
+    text-align: center;
+    place-content: center;
+    
+}
+
+.menu_content{
+    justify-content: center;
+    grid-column: span 2;
+}
+.image{
+    position: relative;
+    /* width: 100%; */
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 0.6em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+
+/*CSS de la reserva*/
+
+.reserva_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 80%;
+}
+.reserva_button{
+    grid-column: 2;
+    justify-self: end;
+    
+}
+.reserva_descripcio{
+    grid-column: span 2;
+}
+.reserva_grid div label{
+    display: block;
+    margin-bottom: 0.3em;
+}
+.reserva_item input{
+    width: 100%;
+    height: 80%;
+}
+.reserva_grid div{
+    padding: 0.8em;
+}
+
+/*CSS del footer*/
+.footer_container{
+    display: flex;
+    bottom: 0;
+    left: 0;
+    border: 1px solid;
+    margin: auto;
+    flex-wrap: wrap;    
+}
+.footer_item{
+    margin: 0.1em;
+    width: 15%;
+    align-content: center;
+    display: flex;
+    margin: 0.4em;
+    gap: 0.3em;
+}
+.footer_end{
+    margin-left: auto;
+}
+.footer_end img{
+    width: 30%;
+    margin-left: auto;
+}
+
+/*CSS del menu de navegacio*/
+.nav_container{
+    display: flex;
+    border: 1px solid;
+    margin:auto;
+    justify-content: end;
+    background-color: rgb(72, 72, 72);
+    /* padding: 0.4em; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+}
+.nav_item{
+    background-color: rgb(207, 232, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border: 1px solid;
+    margin: 0.5em;
+    padding: 0.2em;
+}
+.nav_item:hover{
+    text-decoration: underline;
+}
+
+/*CSS de la capsalera*/
+.capsalera {
+    position: relative;
+    width: 100%;
+}
+
+.capsalera img {
+    width: 100%;
+}
+
+.middle_left {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    color: white;
+    font-weight: bold;
+}

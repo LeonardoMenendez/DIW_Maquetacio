@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Practica 9</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/style.css">
+          <link rel="icon" type="image/x-icon" href="/img/pasta.jpg">
+    </head>
+
+    <body>  
+
+        <!--Always visible navigation-->
+        <nav class="nav_container">
+            <div class="nav_item">Nosaltres</div>
+            <div class="nav_item">Carta</div>
+            <div class="nav_item">Galeria</div>
+        </nav>
+        
+        <!--header image-->
+        <section class="capsalera">
+            <img src="img/restaurantFood.png" alt="Starting image, table full of food">
+            <div class="middle_left">
+                <h2>Restaurant els coberts</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </section>
+
+        <!--about us seccion-->
+        <section class="sobre_nosaltres" id="sobre_nosaltres">
+            <div class="gridItem sn1">Sobre nosaltres</div>
+            <div class="gridItem image">
+                <img src ="img/fish.jpg" alt="fish dish">
+            </div>
+            <div class="gridItem sn3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium eu massa sed elementum. Ut bibendum commodo ante elementum faucibus.
+            </div>
+            <div class="gridItem sn4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium eu massa sed elementum. Ut bibendum commodo ante elementum faucibus.
+            </div>
+            <div class="gridItem image">
+                <img src ="img/entree.jpg" alt="entrees">
+            </div>
+
+        </section>
+        
+        <!--Menus-->
+        <h2>Carta</h2>
+        <section class="carta" id="carta">
+            <div class="gridItem menu">menú</div>
+            <div class="gridItem side_menu"> menu</div>
+            <div class="gridItem menu_content">content
+                <h2>Contingunt</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium eu massa sed elementum. Ut bibendum commodo ante elementum faucibus. Pellentesque dignissim volutpat libero, et aliquet lacus dignissim nec. Praesent quis porta sapien. Phasellus consequat non orci sed elementum. Phasellus metus mi, hendrerit at imperdiet eu, euismod ut leo. Ut suscipit, arcu at rutrum elementum, leo urna hendrerit erat, vitae pharetra magna ex vitae turpis. Sed aliquet risus in arcu porttitor, non consequat dui sodales. 
+</p>
+            </div>
+            <div class="gridItem image">
+                <img src ="img/pasta.jpg" alt="pasta dish">
+                <div class="overlay">pasta</div>
+            </div>
+            <div class="gridItem image">
+                <img src ="img/entree.jpg" alt="entrees">
+                <div class="overlay">entrants</div>
+            </div>
+            <div class="gridItem side_menu">menu</div>
+            <div class="gridItem menu_content">
+                <h2>Contingunt</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium eu massa sed elementum. Ut bibendum commodo ante elementum faucibus. Pellentesque dignissim volutpat libero, et aliquet lacus dignissim nec. Praesent quis porta sapien. Phasellus consequat non orci sed elementum. Phasellus metus mi, hendrerit at imperdiet eu, euismod ut leo. Ut suscipit, arcu at rutrum elementum, leo urna hendrerit erat, vitae pharetra magna ex vitae turpis. Sed aliquet risus in arcu porttitor, non consequat dui sodales. </p>
+            </div>
+            <div class="gridItem image ">
+                <img src ="img/salad.jpg" alt="salad">
+                <div class="overlay">amanida</div>
+            </div>
+            <div class="gridItem image">
+                <img src ="img/fish.jpg" alt="fish dish">
+                <div class="overlay">peix</div>
+            </div>
+
+        </section>
+
+        <!--galery of all the images-->
+        <h2>Galeria</h2>
+        <section class="galery_container" id="galeria">
+
+            <div class="galery_item">
+                <img src ="img/burger.jpg" alt="burger">
+            </div>
+            <div class="galery_item">
+                <img src ="img/entree.jpg" alt="entree">
+            </div>
+            <div class="galery_item">
+                <img src ="img/fish.jpg" alt="fish dish">
+            </div>
+            <div class="galery_item">
+                <img src ="img/meat.jpg" alt="meat dish">
+            </div>
+            <div class="galery_item">
+                <img src ="img/strogonoff.jpeg" alt="strogonoff">
+            </div>
+            <div class="galery_item">
+                <img src ="img/pasta.jpg" alt="pasta">
+            </div>
+            <div class="galery_item">
+                <img src ="img/salad.jpg" alt="salad">
+            </div>
+            <div class="galery_item">
+                <img src ="img/cake.jpg" alt="cake">
+            </div>
+
+
+        </section>
+
+        <!--form for the reservas-->
+        <h2>Reserva</h2>
+        <form class="reserva_grid" id="reservar">
+            <div class="reserva_item">
+                <!--etiqueta i text area-->
+                <label for="name">Nom</label>
+                <input type="text" id ="name">
+            </div>
+            <div class="reserva_item">
+                <!--etiqueta i text area-->
+                <label for="npers">Número de persones</label>
+                <input type="text" id ="npers">
+            </div>
+            <div class="reserva_item">
+                <!--etiqueta i text area-->
+                <label for="data">Data</label>
+                <input type="text" id ="data">
+            </div>
+            <div class="reserva_item">
+                <!--etiqueta i text area-->
+                <label for="hora">Hora</label>
+                <input type="text" id ="hora">
+            </div>
+            <div class="reserva_descripcio reserva_item">
+                <!--etiqueta i text area-->
+                <label for="desc">Descripcio</label>
+                <input type="text" id="desc">
+            </div>
+
+            <div class="reserva_button">
+                <input type="submit" value="Reservar">
+            </div>
+
+        </form> 
+
+
+        <footer class="footer_container">
+            <div class="footer_item">
+                <i class="material-icons">email</i>
+                <div class="">email@example.com</div>
+            </div>
+            <div class="footer_item">
+                <i class="material-icons">telephone</i>
+                <div class="">999999999</div>
+            </div>
+
+            <div class="footer_item footer_end">
+                <img src="img/loremImpsumLogo.avif" alt="logo"> <!--it is too small but the logo says lorem ipsum and i thought it was funny-->
+            </div>
+        </footer>
+
+
+    </body> 
+</html>
