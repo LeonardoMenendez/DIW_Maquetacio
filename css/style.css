@@ -9,6 +9,13 @@ h2{
     margin-left: 10%;
     margin-top: 1em;
 }
+.btnReservaFixed{
+
+    position:fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 5;
+}
 /*CSS de la galeria*/
 .galery_container{
     
@@ -20,7 +27,6 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .galery_item{
     width: 23%;
     margin: 0.3em;
@@ -83,6 +89,7 @@ h2{
         /* height: auto; */
         border-radius: 8%;
 }
+
 /*CSS de la carta*/
 .carta{
     border: 1px solid;
@@ -107,7 +114,6 @@ h2{
     place-content: center;
     
 }
-
 .menu_content{
     justify-content: center;
     grid-column: span 2;
@@ -130,9 +136,7 @@ h2{
     padding-top: 0.5em;
 }
 
-
 /*CSS de la reserva*/
-
 .reserva_grid{
     display: grid;
     grid-template-columns: auto auto;
@@ -215,11 +219,9 @@ h2{
     position: relative;
     width: 100%;
 }
-
 .capsalera img {
     width: 100%;
 }
-
 .middle_left {
     position: absolute;
     bottom: 50%;
@@ -231,3 +233,13 @@ h2{
     padding: 1em;
 
 }
+
+
+
+
+/*CSS-RESPONSIVE*/
+
+
+
+
+
