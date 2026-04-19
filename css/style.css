@@ -193,7 +193,7 @@ h2{
     display: flex;
     border: 1px solid;
     margin:auto;
-    justify-content: center;
+    justify-content: end;
     background-color: rgb(72, 72, 72);
     /* padding: 0.4em; */
     position: fixed;
@@ -240,7 +240,7 @@ h2{
 /*CSS-RESPONSIVE*/
 
 /*tablet Size*/
-@media (max-width:768){
+@media (max-width:768px){
     .nav_container{
         display: flex;
     border: 1px solid;
