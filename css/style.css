@@ -10,7 +10,6 @@ h2{
     margin-top: 1em;
 }
 .btnReservaFixed{
-
     position:fixed;
     bottom: 5%;
     right: 2%;
@@ -20,7 +19,6 @@ h2{
 }
 /*CSS de la galeria*/
 .galery_container{
-    
     /* border: 2px solid black; */
     display: flex;
     width: 80%;
@@ -32,8 +30,7 @@ h2{
 .galery_item{
     width: 23%;
     margin: 0.3em;
-    min-width: 50px; /*crear un limit per a que les imatges no continuin disminuint i es quedin totes en una sola columna eventualment*/
-    
+    min-width: 50px; /*crear un limit per a que les imatges no continuin disminuint i es quedin totes en una sola columna eventualment*/   
 }
 .galery_item img{
     border: 3px solid #ddd;
@@ -50,7 +47,6 @@ h2{
     border: 3px solid #01e9ed;
     filter: brightness(60%); /*decreases brighness making the image darker when hovering*/
 }
-
 /*CSS sobre nosaltres*/
 .sobre_nosaltres{
     display: grid;
@@ -65,15 +61,12 @@ h2{
     /* border: 1px solid; */
     text-align: justify;
     margin: 1em;
-    
-    
 }
 .sn1{
     grid-column: 1/4;
     text-align: left;
     font-size: 1em;
-    padding-left: 5%;
-    
+    padding-left: 5%;   
 }
 .sn3{
     grid-column: 2/4;
@@ -83,16 +76,13 @@ h2{
     grid-column: 1/3;
     border: 1px solid;
 }
-
 .image img{
         /* display: block; */
         width: 100%;
         height: 100%;
         /* height: auto; */
-        border-radius: 8%;
-        
+        border-radius: 8%;       
 }
-
 /*CSS de la carta*/
 .carta{
     border: 1px solid;
@@ -114,8 +104,7 @@ h2{
     border: 1px solid;
     border-radius: 0.6em;
     text-align: center;
-    place-content: center;
-    
+    place-content: center;   
 }
 .menu_content{
     justify-content: center;
@@ -138,7 +127,6 @@ h2{
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
-
 /*CSS de la reserva*/
 .reserva_grid{
     display: grid;
@@ -165,7 +153,6 @@ h2{
 .reserva_grid div{
     padding: 0.8em;
 }
-
 /*CSS del footer*/
 .footer_container{
     display: flex;
@@ -190,7 +177,6 @@ h2{
     width: 30%;
     margin-left: auto;
 }
-
 /*CSS del menu de navegacio*/
 .nav_container{
     display: flex;
@@ -236,10 +222,6 @@ h2{
     padding: 1em;
 
 }
-
-
-
-
 /*CSS-RESPONSIVE*/
 /*Tablet size*/
 @media (max-width:768px){
@@ -254,7 +236,6 @@ h2{
     .sobre_nosaltres{
         display: grid;
         grid-template-columns: auto;
-        
         margin: auto;
         width: 80%;
     }
@@ -291,32 +272,12 @@ h2{
         text-align: center;
         padding: 1%;
     }
-    .overlay{
-        position: absolute;
-        bottom: 0;
-
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        width: 100%;
-        font-size: 2em;
-        text-align: center;
-        border-radius: 0.6em;
-        padding-bottom: 0.5em;
-        padding-top: 0.5em;
-    }
     .image{
-        position: relative;
         display: inline-block;
         
         /* width: 100%; */
     }
-    .image img{
-        /* display: block; */
-        width: 100%;
-        height: 100%;
-        border-radius: 8%;
-        
-    }
+    
 
     
     .nav_container{
@@ -334,38 +295,27 @@ h2{
         width: 40%;
     }
 
-.footer_end{
-    display: none;
+    .footer_end{
+        display: none;
+    }
+    .footer_container{
+        justify-content: center;
+    }
+    .footer_item{
+            width: auto;
+            
+    }   
 }
-.footer_container{
-    justify-content: center;
-}
-.footer_item{
-        width: auto;
-        
-}
-
-    
-}
-
-
-
 /*phone Size*/
 @media (max-width:576px){
     .capsalera{
         margin-top: 129px;
     }
 
-    .center_text{
-        text-align: center;
-    }
 
     .sobre_nosaltres{
-        display: grid;
         grid-template-columns: 1fr;
         
-        margin: auto;
-        width: 80%;
     }
     .sn1, .sn2, .sn3, .sn4, .sn5 {
         grid-column: auto;
@@ -394,14 +344,6 @@ h2{
     .gridItem {
         text-align: center;
     }
-    .image img{
-        /* display: block; */
-        width: 50%;
-        height: 100%;
-        /* height: auto; */
-        border-radius: 8%;
-        
-    }
 
     .carta{
         border: 1px solid;
@@ -420,30 +362,9 @@ h2{
     .c7{grid-row: 7;}
     .c8{grid-row: 8;}
     .c9{grid-row: 9;}
-    .overlay{
-        position: absolute;
-        bottom: 0;
-
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        width: 100%;
-        font-size: 2em;
-        text-align: center;
-        border-radius: 0.6em;
-        padding-bottom: 0.5em;
-        padding-top: 0.5em;
-    }
-    .image{
-        position: relative;
-        display: inline-block;
-        /* width: 100%; */
-    }
     .image img{
-        /* display: block; */
         width: 100%;
-        /* height: 100%; */
         height: auto;
-        border-radius: 8%;
         
     }
     .side_menu{
@@ -451,8 +372,6 @@ h2{
     }
     .nav_container{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .galery_container{
         flex-direction: column;
