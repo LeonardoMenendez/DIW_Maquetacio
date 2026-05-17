@@ -43,9 +43,15 @@ h2{
 .galery_item:nth-child(4n){
     filter: brightness(70%);
 }
+/*Exercici 1 transició*/
 .galery_item img:hover{
     border: 3px solid #01e9ed;
     filter: brightness(60%); /*decreases brighness making the image darker when hovering*/
+    transform: rotate(15deg) scale(1.2);
+    filter: grayscale(100%);
+    transition: filter 2s,transform 2s;
+
+
 }
 /*CSS sobre nosaltres*/
 .sobre_nosaltres{
@@ -191,6 +197,11 @@ h2{
     right: 0;
     z-index: 1000; 
 }
+/*exercici 1 transició nova*/
+.nav_container:hover{
+    background-color: #01e9ed;
+    transition: background-color 2s;
+}
 .nav_item{
     background-color: rgb(207, 232, 255);
     font-family: 'Courier New', Courier, monospace;
@@ -215,13 +226,40 @@ h2{
     position: absolute;
     bottom: 50%;
     left: 10%;
-    color: rgb(25, 0, 149);
+    color: orange;
     font-weight: bolder;
     background-color: rgb(89, 132, 170,0.5) ;
     border-radius: 1em;
     padding: 1em;
 
 }
+.headerText{
+    animation-name: moving_header;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+}
+@keyframes moving_header{
+    0%{opacity: 0%;}
+    25%{opacity: 25%;}
+    50%{opacity: 50%;}
+    100%{opacity: 100%;
+        color: white;}
+}
+.titles{
+    animation-name: changing_titles;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    
+}
+@keyframes changing_titles{
+    0%{color: aqua;}
+    25%{color: crimson;}
+    50%{color: yellowgreen;}
+    100%{color: aqua;}
+}
+
+
+
 /*CSS-RESPONSIVE*/
 /*Tablet size*/
 @media (max-width:768px){
@@ -385,6 +423,52 @@ h2{
     
 }
 
+
+/*css video*/
+.restaurant-video-section {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.vidDiv {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.vidDiv video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.video-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 12px;
+    border-radius: 12px;
+}
+
+.control-icon {
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.control-icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px white);
+}
 
 
 

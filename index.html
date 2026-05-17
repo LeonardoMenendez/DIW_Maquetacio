@@ -3,11 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>Practica 9</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="css/style.css">
           <link rel="icon" type="image/x-icon" href="/img/pasta.jpg">
     </head>
     <!-- He fet alguns canvis en el html degut a que tenia algunes coses mal i sense aquests no podria fer la practica 10 -->
+    
+    
+    
     <body>  
         <div>
             <button class="btnReservaFixed">Reserva</button>
@@ -23,14 +27,14 @@
         <section class="capsalera">
             <img src="img/restaurantFood.png" alt="Starting image, table full of food">
             <div class="middle_left">
-                <h1 class="center_text">Restaurant els coberts</h1>
-                <h2 class="center_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                <h1 class="center_text headerText">Restaurant els coberts</h1>
+                <h2 class="center_text headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
             </div>
         </section>
 
         <!--about us seccion-->
         <section class="sobre_nosaltres" id="sobre_nosaltres">
-            <div class="gridItem sn1">Sobre nosaltres</div>
+            <div class="gridItem sn1 titles">Sobre nosaltres</div>
             <div class="gridItem image sn2">
                 <img src ="img/fish.jpg" alt="fish dish">
             </div>
@@ -47,7 +51,7 @@
         </section>
         
         <!--Menus-->
-        <h2>Carta</h2>
+        <h2 class="titles">Carta</h2>
         <section class="carta" id="carta">
             <div class="gridItem menu c1">menú</div>
             <div class="gridItem side_menu c2"> menú 1</div>
@@ -80,7 +84,7 @@
         </section>
 
         <!--galery of all the images-->
-        <h2>Galeria</h2>
+        <h2 class="titles">Galeria</h2>
         <section class="galery_container" id="galeria">
 
             <div class="galery_item">
@@ -110,6 +114,35 @@
 
 
         </section>
+
+
+
+<section class="restaurant-video-section">
+    <h2>Vídeos del restaurant</h2>
+
+    <div class="vidDiv">
+        <video id="restaurantVideo" muted>
+            <source src="videos/restaurantVideo.mp4" type="video/mp4">
+        </video>
+        <div class="video-controls">
+            <span class="material-symbols-outlined control-icon" id="playBtn">
+                play_circle
+            </span>
+            <span class="material-symbols-outlined control-icon" id="pauseBtn">
+                pause_circle
+            </span>
+            <span class="material-symbols-outlined control-icon" id="volumeUpBtn">
+                volume_up
+            </span>
+            <span class="material-symbols-outlined control-icon" id="volumeOffBtn">
+                volume_off
+            </span>
+        </div>
+    </div>
+</section>
+
+
+
 
         <!--form for the reservas-->
         <h2>Reserva</h2>
@@ -162,6 +195,60 @@
             </div>
         </footer>
 
+        <!--Script afegit dins del html perque no sabia si podiem afegin un nou arxiu javascript-->
+    <script>
+        const video = document.getElementById("restaurantVideo");
 
+        const playBtn = document.getElementById("playBtn");
+        const pauseBtn = document.getElementById("pauseBtn");
+        const volumeUpBtn = document.getElementById("volumeUpBtn");
+        const volumeOffBtn = document.getElementById("volumeOffBtn");
+
+        playBtn.addEventListener("click", function () {
+            video.play();
+        });
+
+        pauseBtn.addEventListener("click", function () {
+            video.pause();
+        });
+
+
+        volumeUpBtn.addEventListener("click", function () {
+            video.muted = false;
+            video.volume = 1;
+        });
+
+        volumeOffBtn.addEventListener("click", function () {
+            video.muted = true;
+        });
+
+        window.addEventListener("scroll", function () {
+    
+        const nav = document.querySelector(".nav_container");
+        
+        if (window.scrollY > 80) {
+            nav.style.padding = "10px 0";
+            nav.style.transition = "0.3s";
+        } else {
+            nav.style.padding = "20px 0";
+        }
+
+        //ens diu la posicio del video
+        const videoPosition = video.getBoundingClientRect();
+
+        const windowHeight = window.innerHeight;
+
+        //comparem les dues per poder play o pause
+        if (videoPosition.top < windowHeight * 0.85 &&
+            videoPosition.bottom > windowHeight * 0.25) {
+            video.play();
+        } else {
+            video.pause();
+        }
+
+    });
+
+        
+    </script>
     </body> 
 </html>
